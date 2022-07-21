@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1>Customer list view</h1>
+<ul>
+    {% for c in object_list %}
+    <li>{{c.name}}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
